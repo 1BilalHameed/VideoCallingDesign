@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.videocallingapp">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".VideoCallActivity"></activity>
+        <activity android:name=".AnswerVideoCallActivity"></activity>
+        <activity android:name=".VideoCallActivity" />
         <activity android:name=".AnswerAudioCallActivity" />
         <activity android:name=".AudioCallActivity" />
         <activity android:name=".MainActivity">
